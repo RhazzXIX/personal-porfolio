@@ -1,2 +1,2 @@
-# project-template
-A template that will be used for my projects
+# personal-portfolio
+A project to portray my ability in creating a responsive site

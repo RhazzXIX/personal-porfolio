@@ -2,18 +2,18 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
-  entry: "./src/index.js",
-  devtool: 'inline-source-map',
+  mode: "development",
+  entry: "./src/index.jsx",
+  devtool: "inline-source-map",
   devServer: {
-    static: './build',
-    hot: true
+    static: "./build",
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '',
-      template: 'src/index.html' 
-    })
+      title: "",
+      template: "src/index.html",
+    }),
   ],
   output: {
     filename: "main.js",
@@ -35,18 +35,25 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.(?:js|mjs|cjs)$/,
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(?:js|jsx|mjs|cjs)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
             presets: [
-              ['@babel/preset-env', { targets: "defaults" }],
-              "@babel/preset-react"
-            ]
-          }
-        }
+              ["@babel/preset-env", { targets: "defaults" }],
+              "@babel/preset-react",
+            ],
+          },
+        },
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
   },
 };
