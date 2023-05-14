@@ -2,10 +2,11 @@
 
 exports[`Projects component Renders on screen 1`] = `
 <div>
-  <div>
-    <h1>
-      Hello Up-skilling World!
-    </h1>
-  </div>
+  <h2>
+    Projects
+  </h2>
+  <ul
+    class="cardContainer"
+  />
 </div>
 `;
