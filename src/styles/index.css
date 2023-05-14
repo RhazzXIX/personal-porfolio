@@ -13,6 +13,16 @@ body {
   min-width: 300px;
   background-color: #0d1b2a;
   display: flex;
+  position: relative;
+  /* height: 2000px; */
+}
+
+img.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: url("../../../misc/portfolio\ project/svg-path.svg");
+  filter: drop-shadow(0 0 4px grey);
 }
 
 main {
@@ -33,6 +43,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  box-shadow: 0 2px 4px black;
 }
 
 nav > a {
@@ -79,7 +90,7 @@ section#about {
 
 div.info {
   max-width: 600px;
-  background-color: #415a77;
+  /* background-color: #415a77; */
   padding: 0 12px;
 }
 
