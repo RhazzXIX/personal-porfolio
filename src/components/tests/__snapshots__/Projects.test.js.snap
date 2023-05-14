@@ -7,6 +7,85 @@ exports[`Projects component Renders on screen 1`] = `
   </h2>
   <ul
     class="cardContainer"
-  />
+  >
+    <li
+      class="card"
+    >
+      <img
+        src="test-file-stub"
+      />
+      <h3>
+        Photo-tagging-app
+      </h3>
+      <p>
+        A "Where is Waldo" like App, where you need to look for a list of characters on the image. A project using firebase as a backend service.
+      </p>
+    </li>
+    <li
+      class="card"
+    >
+      <img
+        src="test-file-stub"
+      />
+      <h3>
+        Shopping cart
+      </h3>
+      <p>
+        An E-commerce project. Used DummyJSON API as a simulation for backend communication. React-router-dom for a client side routing
+      </p>
+    </li>
+    <li
+      class="card"
+    >
+      <img
+        src="test-file-stub"
+      />
+      <h3>
+        Memory Card
+      </h3>
+      <p>
+        A game app where to test your memory. Utilizing React Library functional components.
+      </p>
+    </li>
+    <li
+      class="card"
+    >
+      <img
+        src="test-file-stub"
+      />
+      <h3>
+        Battleship
+      </h3>
+      <p>
+        A game app based on the board game "Battleship". Created using only Javascript, HTML & CSS
+      </p>
+    </li>
+    <li
+      class="card"
+    >
+      <img
+        src="test-file-stub"
+      />
+      <h3>
+        Weather App
+      </h3>
+      <p>
+        An app that shows the current weather of the entered. Portrays my ability to communicate with the backend and handling "Promises"
+      </p>
+    </li>
+    <li
+      class="card"
+    >
+      <img
+        src="test-file-stub"
+      />
+      <h3>
+        Restaurant
+      </h3>
+      <p>
+        A Restaurant page. A project showcasing webpack, ES6 Modules
+      </p>
+    </li>
+  </ul>
 </div>
 `;
