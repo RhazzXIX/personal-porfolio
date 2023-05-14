@@ -1,17 +1,13 @@
 import React, {StrictMode} from 'react'
 import  ReactDOM from 'react-dom/client'
-import './assets/styles/index.css'
-import App from './components/App'
+import './styles/index.css'
+import Projects from './components/Projects'
 import './index.html'
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
+const projectSection = ReactDOM.createRoot(document.getElementById("projects"))
 
-root.render(
+projectSection.render(
   <StrictMode>
-    <App/>
+    <Projects/>
   </StrictMode>
 )
-
-const returnNum = (num)  => num
-
-export default returnNum

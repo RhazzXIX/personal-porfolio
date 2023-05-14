@@ -6,9 +6,9 @@
   "homepage": "https://rhazzxix.github.io/personal-porfolio/",
   "mode": "development",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "build": "webpack --progress --watch",
-    "domTest": "jest --env=jsdom",
+    "domTest": "jest --env=jsdom --watch",
     "getLogs": "git log --oneline --abbrev-commit --all --graph --decorate",
     "start": "webpack serve --open",
     "predeploy": "npm run build",
