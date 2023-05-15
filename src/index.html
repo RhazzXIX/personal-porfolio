@@ -7,11 +7,7 @@
     <title>Profile</title>
   </head>
   <body>
-    <img
-      class="background"
-      src="./assets/images/svg-path.svg"
-      alt=""
-    />
+    <img class="background" src="./assets/images/svg-path.svg" alt="" />
     <main>
       <nav>
         <a href="#about">About</a>
@@ -20,10 +16,7 @@
       </nav>
       <section id="about">
         <div class="pfpContainer">
-          <img
-            src="./assets/images/dpfp2.png"
-            alt="Personal Pic"
-          />
+          <img src="./assets/images/dpfp2.png" alt="Personal Pic" />
         </div>
         <div class="info">
           <h1>About me</h1>
@@ -44,6 +37,58 @@
             >.
           </p>
           <ul>
+            <li>
+              <a href="mailto:jm21tonio@gmail.com">
+                <img
+                  class="profile-icon"
+                  src="./assets/images/email-outline.svg"
+                  alt="jm21tonio@gmail.com"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/RhazzXIX"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="profile-icon"
+                  src="./assets/images/GitHub-Mark-32px.png"
+                  alt="Github Profile"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/raul-ortonio-32764724b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="profile-icon"
+                  src="./assets/images/In-White-34.png"
+                  alt="Linkedin Profile"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="projects"></section>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <p>
+          Please get in touch if you think our work could be mutually
+          beneficial.
+        </p>
+        <ul>
+          <li>
+            <a href="mailto:jm21tonio@gmail.com">
+              <img
+                class="profile-icon"
+                src="./assets/images/email-outline.svg"
+                alt="jm21tonio@gmail.com"
+              />
+            </a>
+          </li>
+          <li>
             <a
               href="https://github.com/RhazzXIX"
               target="_blank"
@@ -53,6 +98,8 @@
                 src="./assets/images/GitHub-Mark-32px.png"
                 alt="Github Profile"
             /></a>
+          </li>
+          <li>
             <a
               href="https://www.linkedin.com/in/raul-ortonio-32764724b/"
               target="_blank"
@@ -62,10 +109,30 @@
                 src="./assets/images/In-White-34.png"
                 alt="Linkedin Profile"
             /></a>
-          </ul>
-        </div>
+          </li>
+        </ul>
+        <form>
+          <label for="name">
+            Name:
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label for="email">
+            Email:
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label for="message">
+            Message:
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
       </section>
-      <section id="projects"></section>
     </main>
   </body>
 </html>
