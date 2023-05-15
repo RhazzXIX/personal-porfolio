@@ -1,0 +1,28 @@
+section#projects {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul.cardContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+}
+
+li.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #415a77;
+  box-shadow: 0 0 4px black;
+}
+
+li.card > h3,
+li.card > p {
+  margin: 12px;
+}
