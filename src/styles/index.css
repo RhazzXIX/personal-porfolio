@@ -10,11 +10,10 @@
 }
 
 body {
-  min-width: 300px;
+  min-width: 344px;
   background-color: #0d1b2a;
   display: flex;
   position: relative;
-  /* height: 2000px; */
 }
 
 img.background {
@@ -28,6 +27,9 @@ img.background {
 main {
   position: relative;
   flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
 }
 
 a {
@@ -38,6 +40,7 @@ nav {
   position: sticky;
   top: 0;
   min-height: 60px;
+  flex: 1 1 100%;
   background-color: #1b263b;
   display: flex;
   align-items: center;
@@ -63,12 +66,14 @@ nav > a:active {
   color: black;
 }
 
-section#about {
-  margin-top: 20px;
+section {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
   justify-content: center;
+}
+
+section#about {
+  gap: 12px;
 }
 
 .pfpContainer {
@@ -103,7 +108,7 @@ div.info a:visited {
   color: rgb(255, 201, 101);
 }
 
-div.info ul {
+ul.contacts {
   margin-top: 12px;
   list-style: none;
   display: flex;
@@ -112,11 +117,48 @@ div.info ul {
   gap: 22px;
 }
 
-div.info img.profile-icon {
+img.profile-icon {
   width: 32px;
-}
-
-div.info ul a:first-of-type img.profile-icon {
   filter: invert(87%) sepia(89%) saturate(0%) hue-rotate(261deg)
     brightness(110%) contrast(97%);
+}
+
+section#contact {
+  margin-bottom: 22px;
+  padding: 22px;
+  gap: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input,
+textarea {
+  font-size: 1.1rem;
+  padding: 2px 4px;
+  border-radius: 8px;
+}
+
+textarea {
+  min-width: 300px;
+  min-height: 256px;
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 6px 12px;
+  width: max-content;
+  margin: auto;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
 }
