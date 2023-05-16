@@ -78,11 +78,22 @@ footer {
   scroll-margin-top: 70px;
 }
 
-section#about {
+header#about {
+  margin: auto;
+  gap: 12px;
+  max-width: 600px;
+  padding: 0 12px;
+  margin-top: 12px;
+}
+
+div.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
-.pfpContainer {
+.pfpBG {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,26 +101,17 @@ section#about {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  box-shadow: 0 0 8px #1b263b;
 }
 
-.pfpContainer img {
+.pfpBG img {
   min-width: 100px;
   height: auto;
   width: 60%;
   filter: drop-shadow(0 0 4px #1b263b);
 }
 
-div.info {
-  max-width: 600px;
-  padding: 0 12px;
-}
-
-div.info h2 {
-  margin-bottom: 12px;
-  text-align: center;
-}
-
-div.info a:visited {
+header#about a:visited {
   color: rgb(255, 201, 101);
 }
 
