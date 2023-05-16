@@ -2,6 +2,7 @@
   font-size: 20px;
   color: white;
   scroll-behavior: smooth;
+  hyphens: auto;
 }
 
 * {
@@ -29,7 +30,7 @@ main {
   position: relative;
   flex: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 60px;
 }
 
@@ -81,16 +82,17 @@ footer {
 header#about {
   margin: auto;
   gap: 12px;
-  max-width: 600px;
+  max-width: 580px;
   padding: 0 12px;
   margin-top: 12px;
 }
 
 div.intro {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
+  flex: 1 1 100%;
 }
 
 .pfpBG {
@@ -124,6 +126,20 @@ ul.contacts {
   gap: 22px;
 }
 
+ul.contacts li {
+  transition: transform 200ms linear;
+  transform: scale(1);
+}
+
+ul.contacts li:hover {
+  transition: transform 200ms linear;
+  transform: scale(1.5);
+}
+
+ul.contacts li:active {
+  filter: drop-shadow(0 0 20px white);
+}
+
 ul.contacts li:first-of-type img.profile-icon {
   filter: invert(87%) sepia(89%) saturate(0%) hue-rotate(261deg)
     brightness(110%) contrast(97%);
@@ -138,6 +154,17 @@ footer#contact {
   padding-bottom: 60px;
   gap: 12px;
   background-color: #0d1b2a;
+  flex: auto;
+  align-items: center;
+}
+
+div.contactHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+  max-height: 400px;
+  gap: 12px;
 }
 
 form {
@@ -173,4 +200,63 @@ button[type="submit"] {
   margin-top: 12px;
   border-radius: 8px;
   font-size: 1.1rem;
+}
+
+@media (min-width: 660px) {
+  nav {
+    justify-content: flex-end;
+    padding-right: 50px;
+    gap: 34px;
+  }
+
+  header#about {
+    scroll-margin-top: 200px;
+    display: block;
+    margin-top: 150px;
+    position: relative;
+    background-color: #415a77;
+    box-shadow: 0 0 4px #0d1b2a;
+    padding: 20px;
+  }
+
+  div.intro {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .pfpBG {
+    position: absolute;
+    transform: translate(-10%, -60%) scale(1.2, 1.3);
+    border-radius: 8px;
+  }
+
+  div.intro h1 {
+    position: absolute;
+    transform: translate(110%, -240%);
+  }
+
+  header#about h2 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  header#about ul {
+    justify-content: end;
+  }
+
+  footer#contact {
+    justify-content: space-around;
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 707px) {
+  div.contactHolder {
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 200px;
+  }
 }

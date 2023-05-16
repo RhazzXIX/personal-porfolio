@@ -1,3 +1,8 @@
+section#projects {
+  max-width: 1070px;
+  margin: auto;
+}
+
 ul.cardContainer {
   margin-top: 20px;
   display: flex;
@@ -18,4 +23,11 @@ li.card {
 li.card > h3,
 li.card > p {
   margin: 12px;
+}
+
+@media (min-width: 660px) {
+  section#projects h2 {
+    flex: auto;
+    margin-left: 50px;
+  }
 }
