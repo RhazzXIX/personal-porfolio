@@ -1,17 +1,19 @@
 :root {
   font-size: 20px;
   color: white;
+  scroll-behavior: smooth;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid white; */
 }
 
 body {
   min-width: 344px;
-  background-color: #0d1b2a;
+  background-color: #415a77;
   display: flex;
   position: relative;
 }
@@ -20,8 +22,7 @@ img.background {
   position: absolute;
   top: 0;
   width: 100%;
-  background-image: url("../../../misc/portfolio\ project/svg-path.svg");
-  filter: drop-shadow(0 0 4px grey);
+  filter: drop-shadow(0 0 8px #0d1b2a);
 }
 
 main {
@@ -29,11 +30,11 @@ main {
   flex: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 60px;
 }
 
 a {
-  color: yellow;
+  color: #e0e1dd;
 }
 
 nav {
@@ -41,12 +42,14 @@ nav {
   top: 0;
   min-height: 60px;
   flex: 1 1 100%;
-  background-color: #1b263b;
+  background-color: #415a77;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  box-shadow: 0 2px 4px black;
+  box-shadow: 0 2px 4px #0d1b2a;
+  scroll-margin-top: 100px;
+  z-index: 1;
 }
 
 nav > a {
@@ -66,10 +69,13 @@ nav > a:active {
   color: black;
 }
 
-section {
+section,
+header,
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  scroll-margin-top: 70px;
 }
 
 section#about {
@@ -95,11 +101,10 @@ section#about {
 
 div.info {
   max-width: 600px;
-  /* background-color: #415a77; */
   padding: 0 12px;
 }
 
-div.info h1 {
+div.info h2 {
   margin-bottom: 12px;
   text-align: center;
 }
@@ -109,7 +114,7 @@ div.info a:visited {
 }
 
 ul.contacts {
-  margin-top: 12px;
+  margin-top: 18px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -117,22 +122,27 @@ ul.contacts {
   gap: 22px;
 }
 
-img.profile-icon {
-  width: 32px;
+ul.contacts li:first-of-type img.profile-icon {
   filter: invert(87%) sepia(89%) saturate(0%) hue-rotate(261deg)
     brightness(110%) contrast(97%);
 }
 
-section#contact {
-  margin-bottom: 22px;
+img.profile-icon {
+  width: 32px;
+}
+
+footer#contact {
   padding: 22px;
+  padding-bottom: 60px;
   gap: 12px;
+  background-color: #0d1b2a;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 12px;
 }
 
 label {
@@ -144,7 +154,7 @@ label {
 input,
 textarea {
   font-size: 1.1rem;
-  padding: 2px 4px;
+  padding: 4px 4px;
   border-radius: 8px;
 }
 

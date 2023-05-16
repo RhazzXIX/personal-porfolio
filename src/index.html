@@ -14,12 +14,12 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <section id="about">
+      <header id="about">
         <div class="pfpContainer">
           <img src="./assets/images/dpfp2.png" alt="Personal Pic" />
         </div>
         <div class="info">
-          <h1>About me</h1>
+          <h2>About me</h2>
           <p>Hi! I'm Raul Ortonio. A self-taught developer.</p>
           <p>
             This project is created to demonstrate my skill on creating a
@@ -36,7 +36,7 @@
               >"The Odin Project"</a
             >.
           </p>
-          <ul>
+          <ul class="contacts">
             <li>
               <a href="mailto:jm21tonio@gmail.com">
                 <img
@@ -53,7 +53,7 @@
                 rel="noopener noreferrer"
                 ><img
                   class="profile-icon"
-                  src="./assets/images/GitHub-Mark-32px.png"
+                  src="./assets/images/GitHub-Mark-Light-32px.png"
                   alt="Github Profile"
               /></a>
             </li>
@@ -70,15 +70,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </header>
       <section id="projects"></section>
-      <section id="contact">
+      <footer id="contact">
         <h2>Contact me</h2>
         <p>
           Please get in touch if you think our work could be mutually
           beneficial.
         </p>
-        <ul>
+        <ul class="contacts">
           <li>
             <a href="mailto:jm21tonio@gmail.com">
               <img
@@ -95,7 +95,7 @@
               rel="noopener noreferrer"
               ><img
                 class="profile-icon"
-                src="./assets/images/GitHub-Mark-32px.png"
+                src="./assets/images/GitHub-Mark-Light-32px.png"
                 alt="Github Profile"
             /></a>
           </li>
@@ -114,25 +114,31 @@
         <form>
           <label for="name">
             Name:
-            <input type="text" name="name" id="name" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              autocomplete="name"
+            />
           </label>
           <label for="email">
             Email:
-            <input type="email" name="email" id="email" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="email"
+            />
           </label>
           <label for="message">
             Message:
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              required
-            ></textarea>
+            <textarea name="message" id="message" required></textarea>
           </label>
           <button type="submit">Send</button>
         </form>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
