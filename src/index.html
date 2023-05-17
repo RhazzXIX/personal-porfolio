@@ -7,7 +7,12 @@
     <title>Profile</title>
   </head>
   <body>
-    <img class="background" src="./assets/images/svg-path.svg" alt="" />
+    <picture>
+      <source srcset="./assets/images/svg-path-extra.svg" media="(min-width: 1500px)" />
+      <source srcset="./assets/images/svg-path-desk.svg" media="(min-width: 1000px)" />
+      <source srcset="./assets/images/svg-path-tab.svg" media="(min-width: 660px)" />
+      <img class="background" src="./assets/images/svg-path.svg" alt="" />
+    </picture>
     <main>
       <nav>
         <div class="navHolder">

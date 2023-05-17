@@ -269,8 +269,8 @@ button[type="submit"] {
 @media (min-width: 1000px) {
   header#about {
     padding: 22px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 32px;
+    margin-bottom: 40px;
     max-width: 820px;
     min-height: 260px;
   }
@@ -300,5 +300,12 @@ button[type="submit"] {
 @media (min-width: 1400px) {
   div.navHolder {
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 1500px) {
+  img.background {
+    max-height: 900px;
+    object-fit: cover;
   }
 }
