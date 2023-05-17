@@ -42,18 +42,23 @@ nav {
   position: sticky;
   top: 0;
   min-height: 60px;
-  flex: 1 1 100%;
   background-color: #415a77;
+  display: flex;
+  box-shadow: 0 2px 4px #0d1b2a;
+  z-index: 1;
+}
+
+div.navHolder {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  box-shadow: 0 2px 4px #0d1b2a;
-  scroll-margin-top: 100px;
-  z-index: 1;
+  margin: auto;
+  flex: auto;
+  max-width: 1300px;
 }
 
-nav > a {
+nav div a {
   color: white;
   font-size: 1.4rem;
   text-decoration: none;
@@ -61,11 +66,11 @@ nav > a {
   border-radius: 8px;
 }
 
-nav > a:hover {
+nav div a:hover {
   outline: 1px solid white;
 }
 
-nav > a:active {
+nav div a:active {
   background-color: white;
   color: black;
 }
@@ -203,10 +208,10 @@ button[type="submit"] {
 }
 
 @media (min-width: 660px) {
-  nav {
+  div.navHolder {
     justify-content: flex-end;
+    gap: 36px;
     padding-right: 50px;
-    gap: 34px;
   }
 
   header#about {
@@ -215,7 +220,7 @@ button[type="submit"] {
     margin-top: 150px;
     position: relative;
     background-color: #415a77;
-    box-shadow: 0 0 4px #0d1b2a;
+    box-shadow: 0 0 20px #0d1b2a, 0 0 20px black;
     padding: 20px;
   }
 
@@ -258,5 +263,42 @@ button[type="submit"] {
     justify-content: flex-start;
     gap: 40px;
     margin-bottom: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header#about {
+    padding: 22px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 820px;
+    min-height: 260px;
+  }
+
+  div.intro {
+    height: 100%;
+    width: 260px;
+    margin-right: 20px;
+    flex-direction: row;
+  }
+
+  .pfpBG {
+    transform: translateX(10%) scale(1.5, 1.7);
+  }
+
+  div.intro h1 {
+    transform: translate(2%, 280%);
+    color: black;
+  }
+
+  footer#contact {
+    justify-content: center;
+    gap: 200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  div.navHolder {
+    padding-right: 0px;
   }
 }
